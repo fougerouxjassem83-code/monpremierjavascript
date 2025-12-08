@@ -69,7 +69,32 @@
 
 
 
+        // un odjet ici c'est 
 
-
-
+let joueurprofessionnel = {
+    nom : "zinedine yazid zidane",
+    datedenaissance : ["23.6.1972"],
+    nationalite : ["francais et algérien"],
+    piedfort : "droit",
+    post : "milieu offensif",
+};
         
+console.log (joueurprofessionnel);
+
+
+
+//ici nous prenoms un autre exemple d'objet d'une femme politique pour bien comprendre
+
+let femmepolitique = {
+    prenom : "zaina mdere",
+    Naissance : 1920.1922,
+    Deces : 1999,
+    Activiter : "femme politique",
+    Membre : "chatouilleuse",
+
+};
+
+//console.log permer d'afficher l'objet
+console.log (femmepolitique.prenom) //jai récuperé le prénom de mon objet
+console.log (femmepolitique.Membre);// jai récuperé le membre de mon objet
+console.log (femmepolitique.Activiter);//jai récuperé le l'activiter de mon objet

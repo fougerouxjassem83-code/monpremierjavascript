@@ -3,4 +3,4 @@ let totalLivres = 500;
     totalLivres -=10;
     totalLivres +=5;
 
-     console.log(totalLivres);
+     
