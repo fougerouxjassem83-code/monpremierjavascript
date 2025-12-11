@@ -1,0 +1,44 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police du texte */
+    background: #f5f5f5; /* Couleur de fond gris clair */
+    display: flex; /* Active le flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    padding-top: 40px; /* Espace en haut de la page */
+}
+
+/* Carte contenant le formulaire */
+.card {
+    background: white; /* Fond blanc */
+    padding: 25px; /* Espace interne */
+    border-radius: 12px; /* Coins arrondis */
+    width: 350px; /* Largeur fixe */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Ombre douce */
+}
+
+/* Styles pour tous les labels */
+label {
+    display: block; /* Chaque label sur une nouvelle ligne */
+    margin-top: 15px; /* Espace au-dessus */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Styles pour les champs texte et menu déroulant */
+input, select {
+    width: 100%; /* Occupent toute la largeur du parent */
+    padding: 8px; /* Espace interne */
+    margin-top: 6px; /* Petit espace au-dessus */
+    border: 1px solid #ccc; /* Bord gris clair */
+    border-radius: 6px; /* Coins légèrement arrondis */
+    font-size: 16px; /* Taille du texte */
+}
+
+/* Zone d'affichage de l'âge */
+#ageDisplay {
+    margin-top: 20px; /* Espace au-dessus */
+    font-size: 20px; /* Texte plus grand */
+    font-weight: bold; /* Texte en gras */
+    color: #065f46; /* Couleur verte foncée */
+}
+
+

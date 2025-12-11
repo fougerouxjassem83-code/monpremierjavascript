@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Calcul d'âge</title>
+        <script src="calculautomatique.js"></script>
+        <link rel="stylesheet" href="calculautomatique.css">
+    </head>
+<body>
+
+    <div class="card">  
+        <h2>Informations utilisateur</h2>
+
+        <!-- Début du formulaire -->
+        <form id="profileForm">
+
+            <!--  prénom -->
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" required> <!-- required = obligatoire -->
+
+
+            <!-- nom -->
+            <label for="nom">Nom :</label> <!---->
+            <input type="text" id="nom" required>
+
+
+            <!-- Menu déroulant : situation -->
+            <label for="situation">Situation :</label>
+            <select id="situation">
+                <option value="etudiant">Étudiant</option>
+                <option value="salarie">Salarié</option>
+            </select>
+
+
+            <!-- Champ : année de naissance -->
+            <label for="annee">Année de naissance :</label>
+            <input type="number" id="annee" placeholder="ex : 2004" min="1900">
+            <!-- placeholder = texte d’exemple / min = valeur minimale autorisée -->
+
+
+            <!-- Zone d'affichage de l'âge (remplie par JavaScript) -->
+            <div id="ageDisplay"></div>
+
+
+            <!-- Zone d’erreur si l’utilisateur entre une mauvaise valeur -->
+            <div id="errorMessage"></div>
+
+
+            <!-- Bouton pour envoyer le formulaire -->
+            <button type="reset">Envoyer</button> 
+            <!-- ATTENTION : type="reset" efface les champs ! -->
+        </form>
+    </div>
+
+</body>
+</html>
