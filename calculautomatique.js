@@ -1,33 +1,28 @@
-//**ici je vais mettre mon calcul d'age */
+// **ici je vais mettre mon calcul d'âge**
+// commentaire : juste une note pour expliquer ce que fait ce code
+// Affiche le document entier
+console.log(document);
 
-// je  récupère les éléments HTML
-let inputAnnee = document.getElementById("annee");
-let resultat = document.getElementById("resultat");
+// Affiche tous les éléments du formulaire
+console.log(document.getElementById("#profileForm"));
 
-// Écoute ce que l’utilisateur écrit dans "année"
-inputAnnee.addEventListener("input", function() {
+// Affiche le bouton
+console.log(document.getElementById("boutonValider"));
 
-    // Je récupère la valeur de l'input
-    let annee = parseInt(inputAnnee.value);
+// Affiche l'input année
+console.log(document.getElementById("annee"));
 
-    // Je récupère l'année actuelle
-    let anneeActuelle = new Date().getFullYear();
+// Affiche les zones d'affichage
+console.log(document.getElementById("ageDisplay"));
+console.log(document.getElementById("errorMessage"));
+ 
+// Affiche tous les inputs de la page
+console.log(document.querySelectorAll("input"));
 
-    // Conditions simples
-    if (isNaN(annee)) {
-        resultat.textContent = "Veuillez entrer une année.";
-        return;
-    }
+// Affiche toutes les divs de la page
+console.log(document.querySelectorAll("div"));
 
-    if (annee < 1900 || annee > anneeActuelle) {
-        resultat.textContent = "Année non valide";
-        return;
-    }
 
-    // ici je -Calcul
-    let age = anneeActuelle - annee;
 
-    // Affichage
-    resultat.textContent = "Vous avez " + age + " ans";
-});
 
+console.log(document.querySelector) 

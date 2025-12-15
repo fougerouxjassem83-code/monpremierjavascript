@@ -12,7 +12,7 @@ body {
     background: white; /* Fond blanc */
     padding: 25px; /* Espace interne */
     border-radius: 12px; /* Coins arrondis */
-    width: 350px; /* Largeur fixe */
+    width: 370px; /* Largeur fixe */
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Ombre douce */
 }
 
