@@ -1,28 +1,22 @@
-// **ici je vais mettre mon calcul d'âge**
-// commentaire : juste une note pour expliquer ce que fait ce code
-// Affiche le document entier
-console.log(document);
-
-// Affiche tous les éléments du formulaire
-console.log(document.getElementById("#profileForm"));
-
-// Affiche le bouton
-console.log(document.getElementById("boutonValider"));
-
-// Affiche l'input année
-console.log(document.getElementById("annee"));
-
-// Affiche les zones d'affichage
-console.log(document.getElementById("ageDisplay"));
-console.log(document.getElementById("errorMessage"));
- 
-// Affiche tous les inputs de la page
-console.log(document.querySelectorAll("input"));
-
-// Affiche toutes les divs de la page
-console.log(document.querySelectorAll("div"));
+//**je récupère la liste des élements */
+let elementListCommunes = document.querySelector("#listecommunes");
+console.log(elementListCommunes);
 
 
+//**j'utilise l a boucle for pour parcourirla liste */
+
+for(let i = 0; 1 <elementListCommunes.length; i= i+1) {
+    console.log(elementListCommunes[i]);
+}
 
 
-console.log(document.querySelector) 
+//**j'utilise queryselector pour récuperer tous les membre de la meme classe */
+
+let elementClassCommunes = document.querySelectorAll(".commune");
+console.log(elementClassCommunes);
+
+for(let i = 0; i <elementClassCommunes.length; i++) {
+    console.log(elementClassCommunes[i]);
+    console.log(elementClassCommunes[i].textContent);
+}
+

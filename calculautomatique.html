@@ -2,65 +2,42 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <!-- Permet d’afficher correctement les accents (é, à, ç…) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Rend la page adaptée aux téléphones et tablettes -->
-    <title>Calcul d'âge</title> <!-- Titre affiché dans l’onglet du navigateur -->
-    <link rel="stylesheet" href="calculautomatique.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto calcul</title>
+
     <script src="calculautomatique.js" defer></script>
-    <!-- Lien vers le fichier JavaScript
-         defer = le JS s’exécute après le chargement du HTML -->
+    <link rel="stylesheet" href="calculautomatique.css">
 </head>
 
 <body>
-<!-- Contenu visible de la page -->
 
-<div class="card">
-    <!-- Boîte principale qui contient le formulaire -->
+<header>
+    <h2>Calcul auto</h2>
+</header>
 
-    <h2>Informations utilisateur</h2>
-    <!-- Titre du formulaire -->
+<section>
+    <article>
+        <h3 id="commune">Liste des communes</h3>
 
-    <form id="profileForm">
-    <!-- Début du formulaire -->
-
-        <label for="prenom">Prénom :</label>
-        <!-- Texte lié au champ prénom -->
-        <input type="text" id="prenom" required>
-        <!-- Champ pour écrire le prénom
-             required = champ obligatoire -->
-
-        <label for="nom">Nom :</label>
-        <!-- Texte lié au champ nom -->
-        <input type="text" id="nom" required>
-        <!-- Champ pour écrire le nom -->
-
-        <label for="situation">Situation :</label>
-        <!-- Texte pour le menu déroulant -->
-        <select id="situation">
-            <!-- Menu avec plusieurs choix -->
-            <option value="etudiant">Étudiant</option>
-            <option value="salarie">Salarié</option>
-        </select>
-
-        <label for="annee">Année de naissance :</label>
-        <!-- Texte pour le champ année -->
-        <input type="number" id="annee" placeholder="ex : 2004" min="1900">
-        <!-- Champ pour entrer l’année de naissance
-             placeholder = exemple
-             min = valeur minimale autorisée -->
-
-        <div id="ageDisplay"></div>
-        <!-- Zone vide où JavaScript affichera l’âge -->
-
-        <div id="errorMessage"></div>
-        <!-- Zone vide où JavaScript affichera les messages d’erreur -->
-
-        <input type="submit" value="Valider" id="boutonValider">
-       <!-- Bouton pour envoyer le formulaire -->
-    
-</div>
-</form>
-
+        <ol id="listecommunes">
+            <li class="commune">Mamoudzou</li>
+            <li class="commune">Bouéni</li>
+            <li class="commune">Tsingoni</li>
+            <li class="commune">Sada</li>
+            <li class="commune">Bandraboua</li>
+            <li class="commune">Acoua</li>
+            <li class="commune">Dembeni</li>
+            <li class="commune">Pamandzi</li>
+            <li class="commune">Dzaoudzi-Labattoir</li>
+            <li class="commune">Mtsangamouji</li>
+            <li class="commune">Bandrélé</li>
+            <li class="commune">Chiconi</li>
+            <li class="commune">Chirongui</li>
+            <li class="commune">Koungou</li>
+            <li class="commune">Kani-Kéli</li>
+        </ol>
+    </article>
+</section>
 
 </body>
 </html>
