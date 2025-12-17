@@ -36,6 +36,6 @@ console.log("mon tableau",tableauEleve);
     for(let i  = 0; < tableauEleve.length; i++){
     console.log(tableauEleve[i]);
 
-        }
+        };
 
         // MERCI ARISTIDE. LA PRCHAINE FOIS , TU DOIS VERROUILLER TON ECRAN. SINON , JE PEUX MODIFIER TON CODE.

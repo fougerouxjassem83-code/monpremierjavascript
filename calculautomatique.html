@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto calcul</title>
-
+    <script src="evenement.js" defer></script>
     <script src="calculautomatique.js" defer></script>
     <link rel="stylesheet" href="calculautomatique.css">
 </head>
@@ -17,8 +17,18 @@
 
 <section>
     <article>
-        <h3 id="commune">Liste des communes</h3>
+       <!--j'affiche la date du jour et l'heure-->
+        <div id="date" class="date">
+        <button id ="dateDuJour">quelle heure est il?</button>
+        <span id="dateDuJour"></span>
+        
+<span id="dateDuJourFormat2"></span>
 
+
+
+            
+        <!--ici jai lister les communes de mayotte-->
+       <h3 id="commune">Liste des communes</h3>
         <ol id="listecommunes">
             <li class="commune">Mamoudzou</li>
             <li class="commune">Bouéni</li>
@@ -38,6 +48,25 @@
         </ol>
     </article>
 </section>
+
+
+
+
+<!--j'insère  une section en utilisant la dom coté Javascript-->
+
+
+
+
+
+<!--ici je met la balise qui permettra de d'afficher la date-->
+
+
+
+
+
+
+
+
 
 </body>
 </html>
