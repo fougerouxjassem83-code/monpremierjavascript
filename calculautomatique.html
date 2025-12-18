@@ -17,15 +17,21 @@
 
 <section>
     <article>
-       <!--j'affiche la date du jour et l'heure-->
-        <div id="date" class="date">
-        <button id ="dateDuJour">quelle heure est il?</button>
-        <span id="dateDuJour"></span>
-        
-<span id="dateDuJourFormat2"></span>
+            <!--ici c'est pour afficher l'heure et date -->
+        <div id="date">
+                <button id="validerDate">Date du jour</button>
+                <span id="DateDuJour"></span>
+                <br>
+                <p>
+                    <span id="dateDuJourFormat2"></span>
+                </p>
+            </div>
 
-
-
+                <!--ici la fonction fleché s'ecécute en keydown-->
+            <div id="fonctionFlech">
+              <button id="boutonflech">Fonction flechiée</button>
+                
+            </div>
             
         <!--ici jai lister les communes de mayotte-->
        <h3 id="commune">Liste des communes</h3>
@@ -46,23 +52,72 @@
             <li class="commune">Koungou</li>
             <li class="commune">Kani-Kéli</li>
         </ol>
+   
+   
+   
+<hr>
+
+
+  <form>
+<div id="div1">
+      <!--j'indique a l'ordinateur que le label est associer a cettte ordinateur-->
+      <label>Prénom(s):</label>
+      <input type="text">
+</div>
+
+<br>
+
+<div id="div1">
+      <label>Nom(s):</label> <!--dans ma balise input jai rajouter-->
+      <input type="text">
+</div>
+
+
+      
+<br>
+
+<div id="div2">
+      <label for="Ville"> Ville:</label>
+              <!--le text ici signifie qu'à l'intérieure de l'input -->
+      <input type="text" id="Ville">
+</div>
+
+<br>
+    <!--la balise <br> signifie les espacements-->
+   
+<div id="div2">
+    <label for="Age"> Age:</label>
+    <input type="text" name="Age" id="Age">
+ </div> 
+
+
+   
+ <br><br>
+                <!--Ici j'ai rajouter un un emplacement ou en poura saisir notre-->
+<div id="div3"></div>    
+                <label for="Date de naissance"> Date de naissance:</label>
+                <input type="date" name="date de naissance" id="date de naissance">
+</div> 
+ 
+
+
+<br><br>
+   
+    <!--ici jai rajouter un bouton envoyer pour appuyer-->
+    <input type="submit" id="boutonvalider">
+   
+   
     </article>
 </section>
 
 
-
+<br><br>
 
 <!--j'insère  une section en utilisant la dom coté Javascript-->
-
-
-
-
-
 <!--ici je met la balise qui permettra de d'afficher la date-->
 
 
-
-
+<div id="conteneur"></div>
 
 
 

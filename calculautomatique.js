@@ -3,7 +3,7 @@ let elementListCommunes = document.querySelector("#listecommunes");
 console.log(elementListCommunes);
 
 
-//**j'utilise l a boucle for pour parcourirla liste */
+//**j'utilise la boucle for pour parcourir la liste */
 
 for(let i = 0; 1 <elementListCommunes.length; i= i+1) {
     console.log(elementListCommunes[i]);
@@ -41,18 +41,22 @@ console.log(elementSection);
 
 //**je vais creer une balise a partir du javascript  */
 
+// 1. Créer l'image
 const img = document.createElement("img");
-img.src = "trippie.jpg";          // chemin ou URL de l'image
-img.alt = "Description";
-img.width = 300;
 
-document.getElementById("container").appendChild(img);
-console.log(img);
+// 2. Définir la source et les attributs
+img.src = "trippie.jpg"; // chemin de l’image
+img.alt = "Mon image";
+img.width = 200;
+
+// 3. Ajouter l'image dans le HTML
+document.getElementById("conteneur").appendChild(img);
 
 
 
 
 
-//**ici je met la balise qui permettra de d'afficher la date en temps et en heure
-// function displayDate() {
-  document.getElementById("demo").innerHTML = Date();
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = new Date();
+}
