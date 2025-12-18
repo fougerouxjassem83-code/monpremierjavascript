@@ -59,27 +59,32 @@
 
 
   <form>
-<div id="div1">
+<div>
       <!--j'indique a l'ordinateur que le label est associer a cettte ordinateur-->
       <label>Prénom(s):</label>
-      <input type="text">
-</div>
-
-<br>
-
-<div id="div1">
+      <input type="text" id="prenom">
       <label>Nom(s):</label> <!--dans ma balise input jai rajouter-->
-      <input type="text">
+      <input type="text" id="nom">
 </div>
 
 
       
 <br>
 
+ <label>
+    <input type="radio" name="sexe" value="Homme" id="homme">
+    Homme
+  </label>
+
+  <label>
+    <input type="radio" name="sexe" value="Femme" id="femme">
+    Femme   
+  </label>
+
 <div id="div2">
       <label for="Ville"> Ville:</label>
               <!--le text ici signifie qu'à l'intérieure de l'input -->
-      <input type="text" id="Ville">
+      <input type="text" id="ville">
 </div>
 
 <br>
@@ -87,26 +92,40 @@
    
 <div id="div2">
     <label for="Age"> Age:</label>
-    <input type="text" name="Age" id="Age">
+    <input type="text" name="Age" id="age">
  </div> 
 
 
    
  <br><br>
                 <!--Ici j'ai rajouter un un emplacement ou en poura saisir notre-->
-<div id="div3"></div>    
+<div id="div1"></div>    
                 <label for="Date de naissance"> Date de naissance:</label>
                 <input type="date" name="date de naissance" id="date de naissance">
 </div> 
  
 
 
+
+
+<!--ici je met un formulair qui selectionne homme ou femmes-->
+
+
+
 <br><br>
    
     <!--ici jai rajouter un bouton envoyer pour appuyer-->
-    <input type="submit" id="boutonvalider">
+    <input type="submit" id="boutonvalider" >
    
-   
+</form>
+
+<!--ici je vais mettre mes id qui vont me permettre de m'envoyer le formulaire-->
+
+ 
+
+
+
+
     </article>
 </section>
 

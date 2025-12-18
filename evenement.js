@@ -33,16 +33,42 @@ elementkeydown.addEventListener("keydown", (event) => {
 //*l'addresse*
 
 //  ici je récupère la balise <form></form> avec ses enfants ensuite je le stock dans la varible elementform*/
-let elementForm = document.querySelector('Form');
+// ici je récupère la balise <form></form> avec ses enfants
+let elementForm = document.querySelector('form'); // form en minuscule
 console.log("elementForm", elementForm);
 
-elementForm.addEventListener("submit" , (event) => { 
-event.preventDefault();
-console.log("####je suis evénement formulaire");
-//ici je veux récupérer le nom l'affiché
-const nom = document.querySelector("#nom").value;
-const prenom = document.querySelector("#prenom").value; 
+elementForm.addEventListener("submit", (event) => { 
+    event.preventDefault();
+    console.log("#### je suis dans l'événement formulaire");
 
+    // ici je récupère le nom et le prénom
+    const nom = document.querySelector("#nom").value;
+    const prenom = document.querySelector("#prenom").value;
+    const ville = document.querySelector("#ville").value;
+    const age = document.querySelector("#age").value;
+    const home = document.querySelector("homme").value;
+
+
+
+    // affichage des valeurs
+    console.log("nom:", nom);
+    console.log("prenom:", prenom);
+    console.log("ville:",ville);
+    console.log("age:",age);
 
 });
 
+
+const form = document.querySelector("#monForm");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const radioChecked = document.querySelector('input[name="sexe"]:checked');
+
+  if (radioChecked) {
+    console.log("Sexe :", radioChecked.value);
+  } else {
+    console.log("Aucun choix sélectionné");
+  }
+});
