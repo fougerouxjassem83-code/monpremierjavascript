@@ -95,6 +95,6 @@ let femmepolitique = {
 };
 
 //console.log permer d'afficher l'objet
-console.log (femmepolitique.prenom) //jai récuperé le prénom de mon objet
+console.log (femmepolitique.prenom); //jai récuperé le prénom de mon objet
 console.log (femmepolitique.Membre);// jai récuperé le membre de mon objet
 console.log (femmepolitique.Activiter);//jai récuperé le l'activiter de mon objet
