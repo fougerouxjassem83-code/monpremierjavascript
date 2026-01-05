@@ -55,16 +55,16 @@
    
    
    
-<hr>
+
 
 
   <form>
 <div>
       <!--j'indique a l'ordinateur que le label est associer a cettte ordinateur-->
-      <label>Prénom(s):</label>
-      <input type="text" id="prenom">
-      <label>Nom(s):</label> <!--dans ma balise input jai rajouter-->
+      <label>Nom(s):</label>
       <input type="text" id="nom">
+      <label>Prénom(s):</label> <!--dans ma balise input jai rajouter-->
+      <input type="text" id="prenom">
 </div>
 
 
@@ -72,8 +72,8 @@
 <br>
 
  <label>
-    <input type="radio" name="sexe" value="Homme" id="homme">
-    Homme
+    <input type="radio" name="sexe" value="homme" id="homme">
+    homme
   </label>
 
   <label>
@@ -90,19 +90,21 @@
 <br>
     <!--la balise <br> signifie les espacements-->
    
-<div id="div2">
-    <label for="Age"> Age:</label>
-    <input type="text" name="Age" id="age">
- </div> 
-
+<div>
+    <label>Année de naissance :</label>
+            <input type="number" id="anneeNaissance" placeholder="Année"
+            min="1900" max="2025" onchange="calculerAge()">
+        <label for="Age"> 
+        </div>
 
    
- <br><br>
+
                 <!--Ici j'ai rajouter un un emplacement ou en poura saisir notre-->
 <div id="div1"></div>    
-                <label for="Date de naissance"> Date de naissance:</label>
-                <input type="date" name="date de naissance" id="date de naissance">
-</div> 
+                <p id="messageUtilisateur">
+        Bonjour <strong><span id="nom_affiche"></span></strong>,
+        vous êtes âgé de <strong><span id="age_calcule"></span></strong> ans
+    </div> 
  
 
 
@@ -123,9 +125,6 @@
 
  
 
-
-
-
     </article>
 </section>
 
@@ -136,9 +135,10 @@
 <!--ici je met la balise qui permettra de d'afficher la date-->
 
 
-<div id="conteneur"></div>
 
 
+
+<!--je vais mettre une image-->
 
 
 
