@@ -1,0 +1,12 @@
+
+ form{
+padding: 15px;  /*pading c'est la hauteur interne */
+ margin: 10px; /* le margin modifie la hauteur extérieur  */
+ border: 0.5px;
+ border-radius: 5px;
+ margin: bottom 12px;
+background-color:whitesmoke;
+width: 500px;
+-webkit-box-flex:initial;
+ }
+

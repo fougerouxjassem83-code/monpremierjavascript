@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto calcul</title>
+    <script src="evenement.js" defer></script>
+    <script src="calculautomatique.js" defer></script>
+    <link rel="stylesheet" href="calculautomatique.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Calcul auto</h2>
+</header>
+
+<section>
+    <article>
+            <!--ici c'est pour afficher l'heure et date -->
+        <div id="date">
+                <button id="validerDate">Date du jour</button>
+                <span id="DateDuJour"></span>
+                <br>
+                <p>
+                    <span id="dateDuJourFormat2"></span>
+                </p>
+            </div>
+
+                <!--ici la fonction fleché s'ecécute en keydown-->
+            <div id="fonctionFlech">
+              <button id="boutonflech">Fonction flechiée</button>
+                
+            </div>
+            
+        <!--ici jai lister les communes de mayotte-->
+       <h3 id="commune">Liste des communes</h3>
+        <ol id="listecommunes">
+            <li class="commune">Mamoudzou</li>
+            <li class="commune">Bouéni</li>
+            <li class="commune">Tsingoni</li>
+            <li class="commune">Sada</li>
+            <li class="commune">Bandraboua</li>
+            <li class="commune">Acoua</li>
+            <li class="commune">Dembeni</li>
+            <li class="commune">Pamandzi</li>
+            <li class="commune">Dzaoudzi-Labattoir</li>
+            <li class="commune">Mtsangamouji</li>
+            <li class="commune">Bandrélé</li>
+            <li class="commune">Chiconi</li>
+            <li class="commune">Chirongui</li>
+            <li class="commune">Koungou</li>
+            <li class="commune">Kani-Kéli</li>
+        </ol>
+   
+   
+   
+
+
+
+  <form>
+<div>
+      <!--j'indique a l'ordinateur que le label est associer a cettte ordinateur-->
+      <label>Nom(s):</label>
+      <input type="text" id="nom">
+      <label>Prénom(s):</label> <!--dans ma balise input jai rajouter-->
+      <input type="text" id="prenom">
+</div>
+
+
+      
+<br>
+
+ <label>
+    <input type="radio" name="sexe" value="homme" id="homme">
+    homme
+  </label>
+
+  <label>
+    <input type="radio" name="sexe" value="Femme" id="femme">
+    Femme   
+  </label>
+
+<div id="div2">
+      <label for="Ville"> Ville:</label>
+              <!--le text ici signifie qu'à l'intérieure de l'input -->
+      <input type="text" id="ville">
+</div>
+
+<br>
+    <!--la balise <br> signifie les espacements-->
+   
+<div>
+    <label>Année de naissance :</label>
+            <input type="number" id="anneeNaissance" placeholder="Année"
+            min="1900" max="2025" onchange="calculerAge()">
+        <label for="Age"> 
+        </div>
+
+   
+
+                <!--Ici j'ai rajouter un un emplacement ou en poura saisir notre-->
+<div id="div1"></div>    
+                <p id="messageUtilisateur">
+        Bonjour <strong><span id="nom_affiche"></span></strong>,
+        vous êtes âgé de <strong><span id="age_calcule"></span></strong> ans
+    </div> 
+ 
+
+
+
+
+<!--ici je met un formulair qui selectionne homme ou femmes-->
+
+
+
+<br><br>
+   
+    <!--ici jai rajouter un bouton envoyer pour appuyer-->
+    <input type="submit" id="boutonvalider" >
+   
+</form>
+
+<!--ici je vais mettre mes id qui vont me permettre de m'envoyer le formulaire-->
+
+ 
+
+    </article>
+</section>
+
+
+<br><br>
+
+<!--j'insère  une section en utilisant la dom coté Javascript-->
+<!--ici je met la balise qui permettra de d'afficher la date-->
+
+
+
+
+
+<!--je vais mettre une image-->
+
+
+
+</body>
+</html>

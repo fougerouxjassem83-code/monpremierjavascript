@@ -1,0 +1,52 @@
+header{
+    text-align: center;
+    background-color:aliceblue;
+    height: 60px;
+    padding: 100px;
+
+}
+
+#date{
+
+    background-color:#adb5bd;
+    width:200px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-flex;
+    margin: 15px;
+}  
+
+
+p{
+
+color: #343a40;
+background-color:#dee2e6;
+width: 80px;
+height: 50px;
+padding: 15px;
+border-radius: 10px;
+margin: 15px;
+font-size: 30px;
+display: inline-flex;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#lesheures,
+h4 {
+    color: #384034;
+    background-color: #dee2e6;
+    height: 60px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px;
+    font-size: 30px;
+    display: inline-flex;
+    transition:scale (0.2s);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
