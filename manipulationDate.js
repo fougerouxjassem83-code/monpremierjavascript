@@ -16,7 +16,6 @@ let elementSpanMois = document.querySelector("#mois");
 elementSpanMois.textContent = maDate.getMonth();
 
 
-<<<<<<< HEAD
 // Ici je crée une fonction qui sert à afficher l'heure
 function afficherHeures() {
 
@@ -56,5 +55,3 @@ setInterval(afficherHeures, 1000);
 
 // Affichage immédiat
 afficherHeures();
-=======
->>>>>>> 6f76e2cfe2c361cbc5579829e4cb6f57925b88d0
